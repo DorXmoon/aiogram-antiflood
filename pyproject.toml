@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aiogram-antiflood"
+version = "0.1.0"
+description = "Flood control & anti-spam middleware for aiogram 3.x"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "DorXmoon" }]
+keywords = [
+  "aiogram",
+  "telegram",
+  "bot",
+  "antiflood",
+  "anti-spam",
+  "ratelimit",
+  "throttling",
+  "middleware",
+]
+dependencies = ["aiogram>=3.0"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Framework :: AsyncIO",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Communications :: Chat",
+  "Topic :: Software Development :: Libraries",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/DorXmoon/aiogram-antiflood"
+Source = "https://github.com/DorXmoon/aiogram-antiflood"
+Issues = "https://github.com/DorXmoon/aiogram-antiflood/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aiogram_antiflood"]
