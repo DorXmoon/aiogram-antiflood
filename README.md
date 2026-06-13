@@ -25,10 +25,26 @@ per-user timestamp bookkeeping. `aiogram-antiflood` packages it once:
 - **No hidden state in aiogram** — the detector is a plain, fully tested class
   you can use outside aiogram too.
 
+## Requirements
+
+- **Python 3.9+**
+- **aiogram 3.x** — installed automatically by the command below.
+
+Check your Python with `python --version`. No Python yet? Get it from
+[python.org/downloads](https://www.python.org/downloads/).
+
 ## Install
 
 ```bash
 pip install aiogram-antiflood
+```
+
+This also pulls in aiogram. To install from source instead:
+
+```bash
+git clone https://github.com/DorXmoon/aiogram-antiflood.git
+cd aiogram-antiflood
+pip install -e .
 ```
 
 ## Quick start
